@@ -1,0 +1,163 @@
+<html>
+
+    <head>
+        <title>{title}</title>
+        <style id="config_css"></style>
+        <style class="preload">
+            html {
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            .preloader {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                background: var(--pl_bg); /* Set by config */
+                z-index: 500;
+            }
+            .preloader svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script src="assets/jquery.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel='stylesheet' type='text/css' href="assets/global.css">
+        <script src="config.js"></script>
+        <script src="assets/particles.js"></script>
+        <script src="assets/animation.js"></script>
+        <script src="assets/config_load.js"></script>
+        <script src="assets/global.js"></script>
+    </head>
+
+    <body>
+
+        <!-- JavaScript Warning -->
+        <noscript class="noscript">JavaScript is required to view this web page!</noscript>
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" stroke="#fff">
+            <g fill="none" fill-rule="evenodd" stroke-width="2">
+            <circle cx="22" cy="22" r="16.3968">
+            <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+            </circle>
+            <circle cx="22" cy="22" r="19.9112">
+            <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+            </circle>
+            </g>
+            </svg>
+        </div>
+
+        <!-- Sticky Navbar -->
+        <div class="sticky-nav">
+            <nav class="sticky-header">
+                <ul>
+                    <li><a class="nav-li-a sticky underline" href="#n1">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n2">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n3">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n4">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n5">{value}</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Head ("home") Navbar -->
+        <header>
+            <nav class="nav-header">
+                <ul>
+                    <li><a class="nav-li-a static underline" href="#n1">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n2">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n3">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n4">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n5">{value}</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Landing page -->
+        <div id="n1">
+            <div id="particles" class="container">
+                <div class="center">
+                    <div class="landing-text">
+                        <div class="home-text">Welcome to </div>
+                        <div class="home-switch" style="width:220px;">{home}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content area -->
+        <div id="n2">
+            <h2>Lorem Ipsum</h2>
+            <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <section class="collumn">
+                <h4>Lorem</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+            <section class="collumn">
+                <div class="header">Lorem Ipsum</div>
+                <div class="box">
+                    <div class="item">
+                        <div><a href="#">This is a sample item</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Portal -->
+        <div id="n3">
+            <div class="header">Lorem Ipsum</div>
+            <div class="container">
+                <div class="collumn">
+                    <div class="list">
+                        <section class="item">
+                            <div class="text right">{value}</div>
+                            <a><i class="fas"></i></a>
+                            <p class="right">{value}</p>
+                        </section>
+                        <section class="item">
+                                <div class="text right">{value}</div>
+                                <a><i class="fas"></i></a>
+                                <p class="right">{value}</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="collumn">
+                    <div class="image">
+                        <img src="assets/portal-center.jpg" alt="Portal Center" width="256" height="256">
+                    </div>
+                </div>
+                <div class="collumn">
+                    <div class="list">
+                           <section class="item">
+                                <a><i class="fas"></i></a>
+                                <div class="text left">{value}</div>
+                                <p class="left">{value}</p>
+                            </section>
+                            <section class="item">
+                                <a><i class="fas"></i></a>
+                                <div class="text left">{value}</div>
+                                <p class="left">{value}</p>
+                            </section>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <span class="copyright">{copyright}</span>
+        </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,240 @@
+/* Global styles for secondary pages */
+
+body {
+    background: white;
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    background: var(--home_bg);
+}
+
+.center {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-family: 'Scope One', serif;
+    top: 50%;
+    color: white;
+    font-size: 50px;
+    transform: translateY(-50%);
+}
+
+
+/* FAQ Page */
+.faq-holder {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 95%;
+    height: 75vh;
+    max-width: 1600px;
+}
+
+.faq-container {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.keywords {
+    display: none;
+}
+
+.question {
+    transition: .3s;
+    display: none;
+    opacity: 0;
+}
+
+.shown {
+    display: block;
+    opacity: 1;
+}
+
+.result {
+    display: inline-block;
+}
+
+.sidebar {
+    background: #4E5359;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 60px;
+    padding-left: 30px;
+    font-family: Quicksand, sans-serif;
+    color: white;
+}
+
+.sidebar input[type="text"] {
+  background: #FFFFFF;
+  border: 1px solid lightgray;
+  height: 30px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.holder {
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.holder li .header {
+    font-family: Quicksand, sans-serif;
+    color: #333;
+    width: calc(100% - 42px);
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    background: #F3F3F5;
+    padding-left: 40px;
+    line-height: 60px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.holder li .header i {
+    transition: .25s all;
+    font-size: 22.5px;
+    margin-right: 12.5px;
+}
+
+li.question.shown:last-of-type {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.answer {
+    transition: .2s all;
+    height: 0px;
+    opacity: 0;
+    overflow-y: hidden;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    background: #F9F9F9;
+}
+.visible {
+    height: 150px;
+    opacity: 1;
+    padding: 8px 8px 8px 8px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.word {
+    display: inline-block;
+}
+
+
+/* Card Page */
+#s2 .spacer {
+    height: 80px;
+}
+
+#s2 .row {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-bottom: 80px;
+}
+
+#s2 .collumn { /* I am aware this is misspelled */
+    transition: all .2s linear;
+    display: inline-block;
+    width: 44%;
+    margin-left: 2.5%;
+    padding: 5px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+}
+#s2 .collumn:hover {
+    background: rgb(235,235,235);
+}
+#s2 h2 {
+    color: #333;
+    letter-spacing: 2px;
+    font-family: 'Scope One', serif;
+    line-height: 64px;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+#s2 .card-image {
+    float: right;
+}
+#s2 .button {
+    transition: all .175s linear;
+    display: block;
+    position: relative;
+    text-align: center;
+    left: 90%;
+    transform: translateX(-100%);
+    width: 90%;
+    background: #86426C;
+    border-radius: 3px;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    max-width: 140px;
+    min-width: 50px;
+    border: 2px solid #953C5E;
+    font-family: 'Scope One', serif;
+}
+
+#s2 p.text {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: initial;
+}
+
+#s2 .button:hover {
+    transform: translateX(-100%) translateY(-4%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media (max-width: 768px) {
+    #s2 .row {
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 80%;
+        margin-bottom: 50px;
+        transform: translateX(-50%);
+    }
+    #s2 .collumn {
+        display: block;
+        width: 95%;
+    }
+}
+@media (min-width: 768px) {
+    #s2 .row {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    #s2 .row {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #s2 .row {
+        width: 1170px;
+    }
+}

@@ -1,0 +1,83 @@
+<html>
+
+    <head>
+        <title>{title}</title>
+        <style id="config_css"></style>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel='stylesheet' type='text/css' href="../assets/global.css">
+        <script src="../config.js"></script>
+        <script src="../assets/jquery.js"></script>
+        <script src="../assets/particles.js"></script>
+        <script src="../assets/animation.js"></script>
+        <script src="../assets/config_load.js"></script>
+        <script src="../assets/global.js"></script>
+        <style>
+            @import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+            @import url("../assets/ext-page.css");
+            .map-holder {
+                max-width: 1170px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- JavaScript Warning -->
+        <noscript class="noscript">JavaScript is required to view this web page!</noscript>
+
+        <!-- Sticky Navbar -->
+        <div class="sticky-nav">
+            <nav class="sticky-header">
+                <ul>
+                    <li><a class="nav-li-a sticky underline" href="#n1">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n2">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n3">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n4">{value}</a></li>
+                    <li><a class="nav-li-a sticky underline" href="#n5">{value}</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Head ("home") Navbar -->
+        <header>
+            <nav class="nav-header">
+                <ul>
+                    <li><a class="nav-li-a static underline" href="#n1">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n2">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n3">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n4">{value}</a></li>
+                    <li><a class="nav-li-a static underline" href="#n5">{value}</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Title -->
+        <div id="#s1">
+            <div id="particles" class="container">
+                <div class="center">
+                    Frequently Asked Questions
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="faq-holder">
+            <div class="sidebar">
+                <input type="text" class="search" placeholder="Search">
+                <div class="result">
+                    <span class="output">{res}</span> Result(s)
+                </div>
+            </div>
+            <div class="faq">
+                <ul class="holder"></ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <span class="copyright">{copyright}</span>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
